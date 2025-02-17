@@ -9,6 +9,8 @@ namespace Example.Armament
     {
         public uint bulletsPerMagazine = 30;
         public uint totalBullets = 125;
+        public WeaponShot weaponShot;
+        public AudioSource soundEffect;
         
         private uint _bulletMagazine = 0;
         
@@ -26,6 +28,12 @@ namespace Example.Armament
         public override WeaponType GetWeaponType()
         {
             return WeaponType.RIFLE;
+        }
+
+        public override void Action()
+        {
+            weaponShot.Shot();
+            soundEffect.Play();
         }
     }
 }

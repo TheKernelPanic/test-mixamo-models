@@ -6,11 +6,10 @@ namespace Example.Player
     public class PlayerShot : MonoBehaviour
     {
         public PlayerEquipment equipment;
-
-
+        
         public void Shot()
         {
-            
+            Debug.Log("Shot!");
         }
     }
 }

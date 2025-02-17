@@ -50,6 +50,11 @@ namespace Example.Player
             return _slotSelected > 0;
         }
 
+        public Weapon GetWeaponEquipment()
+        {
+            return _weaponSlotOne;
+        }
+
         private void PropagateAnimatorParameter(Weapon weapon)
         {
             if (weapon.GetWeaponType() == WeaponType.RIFLE)

@@ -8,6 +8,8 @@ namespace Example.Armament
     {
         public abstract string GetName();
         public abstract WeaponType GetWeaponType();
+
+        public abstract void Action();
     }
 
     public enum WeaponType

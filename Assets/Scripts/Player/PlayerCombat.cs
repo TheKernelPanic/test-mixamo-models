@@ -39,7 +39,7 @@ namespace Example.Player
             {
                 if (_isAim && equipment.HasWeaponEquipment())
                 {
-                    Debug.Log("Shot!");
+                    equipment.GetWeaponEquipment().Action();
                 }
             }
         }
